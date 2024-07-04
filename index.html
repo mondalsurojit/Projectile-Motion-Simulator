@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projectile Motion</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="Projectile.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="./projectile-motion.png" alt="logo" id="logo">
+        <section class="controls">
+            <div class="inputs">
+                <input type="text" name="velocity" id="velocity" placeholder="Initial Velocity"
+                    title="* 0&lt; initial velocity &lt;=120">
+                <input type="text" name="angle" id="angle" placeholder="Angle" title="* 0°&lt;= angle &lt;=90°">
+            </div>
+            <div class="btns">
+                <button id="launch">Launch</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="velocity-values">
+                <p>Vertical Velocity: <span id="ver-vel">0.00</span></p>
+                <p>Horizontal Velocity: <span id="hor-vel">0.00</span></p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="board-wrapper">
+            <div class="board">
+                <div id="projectile"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enhanced by <a href="https://mondalsurojit.github.io/Surojit/">Surojit</a>, with 💖</p>
+    </footer>
+</body>
+
+</html>
